@@ -14,7 +14,7 @@ const Booking = () => {
                 </select>
             </div>
             <div className='flex w-full'>
-                <div className='flex flex-col w-full lg:max-w-[250px] my-2 p-2'>
+                <div className='flex flex-col w-full lg:max-w-[250px] my-2 ml-[-10px] p-2 md:ml-[0]'>
                     <label>Check-In</label>
                     <input className='border rounded-md p-2' type='date'></input>
                 </div>
