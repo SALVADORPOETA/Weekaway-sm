@@ -6,6 +6,7 @@ import {
     FaGooglePlusG,
     FaInstagram 
 } from 'react-icons/fa'
+import { AiOutlineClose } from 'react-icons/ai'
 // import { BsChatSquareDots } from 'react-icons/bs'
 
 const Navbar = () => {
@@ -39,7 +40,7 @@ const handleNav = () => {
         </div>
         {/* Hamburger icon */}
         <div onClick={handleNav} className='sm:hidden z-10'>
-            <FaBars size={20} className='mr-4 cursor-pointer' />
+            {nav ? <AiOutlineClose size={20} className='mr-4 cursor-pointer' /> : <FaBars size={20} className='mr-4 cursor-pointer' />}
         </div>
         {/* Mobile Menu */}
         <div 
